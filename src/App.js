@@ -6,7 +6,7 @@ import Pizza from './containers/Pizza';
 import asyncComponent from './hoc/asyncComponent';
 
 
-const AsyncPizza -= asyncComponent(()=> {
+const AsyncPizza = asyncComponent(()=> {
     return import('./containers/Pizza.js')
 }) 
 class App extends Component {
